@@ -90,9 +90,16 @@ Use the higher-order function getWinnersByYear to do the following:
 💡 HINT: the strings returned need to exactly match the string in step 4.
  */
 
-function getWinnersByYear(/* code here */) {
-    /* code here */
+function getWinnersByYear(array, gf, gy, gw ) {
+    const arr = []
+    array.map(x => {
+        if(x["Stage"] === "Final"){
+            arr.push(`In ${x["Year"]}, ${x["Home Team Name"]} won the world cup!`)
+        }
+    })
+    return arr
 }
+
 
 
 
